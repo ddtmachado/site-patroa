@@ -1,0 +1,112 @@
+baseURL       = ""
+languageCode  = "pt-BR"
+title         = "Patroa | Seu dia com mais sabor"
+theme         = "roxo-hugo"
+summarylength = 25
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Inicio"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "Sobre"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Portfolio"
+    url     = "portfolio"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Contato"
+    url     = "contact"
+    weight  = 4
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  logo_footer = "images/logo.png"
+  favicon_icon = "images/favicon.ico"
+  favicon_shortcut_icon = "images/favicon.png"
+  custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Patroa | Indústria e Comercio de Alimentos"
+  author = "Douglas De Toni Machado"
+  # Google Analitycs
+  googleAnalitycsID = ""
+  # We're using formspree.io for form handling, paste your formspree url below
+  fabform  = "https://fabform.io/f/1RY5Zcq"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "Nome"    
+    placeholder_email             = "Email"
+    send_message                  = "Enviar Mensagem"
+
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Entre em contato"
+    url     = "contact"
+  
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/fundo.jpg"
+    heading               = "SEU DIA COM MAIS SABOR"
+    tagline               = "Produtos Patroa"
+    primary_button        = "Portfolio"
+    primary_button_url    = "portfolio"
+    secondary_button      = "Contato"
+    secondary_button_url  = "contact"
+
+  [params.portfolio]
+    enable    = true
+    title     = "Linha de produtos"
+    subtitle  = "Garantia de alta qualidade da elaboração ao acondicionamento."
+    view_project = "Saiba Mais"
+    more_works = "VER MAIS"
+    scroll_down = "Explore"
+
+  [params.call_to_action]
+    enable              = false
+#    background_image    = "images/backgrounds/cta-background.jpg"
+#    title               = "LET’S WORK TOGETHER"
+#    primary_button      = "Submit Query"
+#    primary_button_url  = "contact"
+#    secondary_button    = "Not Convinced"
+#    secondary_button_url = "portfolio"
+
+  [params.footer]
+    params.footer.qr_print = false
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Informações de contato"
+      address = "Rua Paulo Turri - 293 - Monte Belo do Sul - RS"
+      phone   = "+55 (54) 3457-1687"
+      email   = "patroa@produtospatroa.com.br"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Mapa do Site"
+        [[params.footer.sitemap.link]]
+          name = "Sobre"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Portfolio"
+          url  = "portfolio"
+        [[params.footer.sitemap.link]]
+          name = "Contato"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Midia Social"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "#"
+
+      [params.footer.back_to_top]
+        description = "Voltar"

@@ -1,0 +1,12 @@
+enable : true
+heading : "Clientes e Parceiros"
+counter_item: 
+  - title: "Mercados"
+    number: "10"
+
+  - title: "Panificadoras"
+    number: "20"
+
+  - title: "Restaurantes"
+    number: "3"
+  
